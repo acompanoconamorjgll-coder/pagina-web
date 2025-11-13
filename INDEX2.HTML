@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Método Montessori en Casa™ — Libro Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --maxw:1200px;
+      --bg:#ffffff;
+      --accent:#4aa98b; /* menta */
+      --accent-2:#cbb59b; /* beige claro */
+      --muted:#6b7280;
+      --card:#ffffff;
+      --radius:14px;
+      --shadow: 0 8px 26px rgba(10,15,20,0.06);
+      --ff-head: 'Poppins', sans-serif;
+      --ff-body: 'Poppins', sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{font-family:var(--ff-body);margin:0;background:var(--bg);color:#0f172a;-webkit-font-smoothing:antialiased}
+    .container{max-width:var(--maxw);margin:32px auto;padding:20px}
+
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:18px;border-radius:16px}
+    @media(max-width:920px){.hero{grid-template-columns:1fr;padding:10px}}
+    .badge{display:inline-block;background:linear-gradient(90deg,var(--accent-2),#fff);padding:6px 12px;border-radius:999px;color:rgba(15,23,42,0.9);font-weight:600;font-size:13px}
+    h1{font-family:var(--ff-head);font-size:36px;margin:12px 0;color:#071428}
+    p.lead{margin:0 0 18px;color:var(--muted);font-size:16px}
+    .hero-img{width:100%;border-radius:12px;box-shadow:var(--shadow);object-fit:cover}
+
+    /* CTA */
+    .cta-row{display:flex;gap:12px;align-items:center;margin-top:12px}
+    .btn{background:var(--accent);color:#fff;padding:14px 18px;border-radius:12px;border:0;font-weight:700;cursor:pointer;box-shadow:0 8px 18px rgba(74,169,139,0.18);text-decoration:none}
+    .btn.ghost{background:transparent;color:var(--accent);border:2px solid rgba(74,169,139,0.12)}
+
+    /* layout */
+    .section{margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    @media(max-width:1000px){.grid-3{grid-template-columns:1fr 1fr}}
+    @media(max-width:700px){.grid-3{grid-template-columns:1fr}}
+
+    .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    @media(max-width:1000px){.benefits{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:700px){.benefits{grid-template-columns:1fr}}
+    .benefit{background:linear-gradient(180deg,#ffffff,#fbfbfb);padding:16px;border-radius:12px;border:1px solid rgba(10,15,20,0.03)}
+    .benefit h5{margin:0 0 8px;font-size:15px}
+    .benefit p{margin:0;color:var(--muted);font-size:14px}
+
+    /* Testimonials */
+    .testimonials{display:flex;gap:14px;overflow:auto;padding-bottom:6px}
+    .test{min-width:260px;background:var(--card);padding:14px;border-radius:12px;box-shadow:var(--shadow)}
+    .test p{font-size:14px;color:var(--muted)}
+    .test .who{font-weight:600;margin-top:10px;font-size:13px}
+
+    /* FAQ */
+    .faq .item{background:var(--card);border-radius:12px;padding:12px;margin-bottom:8px;box-shadow:var(--shadow)}
+    .faq button{width:100%;text-align:left;border:0;background:transparent;padding:0;font-weight:600;cursor:pointer}
+    .faq .ans{margin-top:8px;color:var(--muted);display:none}
+
+    /* Sticky mobile CTA */
+    .sticky-cta{display:none}
+    @media(max-width:700px){.sticky-cta{position:fixed;bottom:12px;left:12px;right:12px;display:flex;justify-content:center;z-index:90}}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media(max-width:800px){.gallery{grid-template-columns:1fr}}
+    .gallery img{width:100%;border-radius:12px;object-fit:cover;box-shadow:var(--shadow)}
+
+    footer{margin:28px 0;color:var(--muted);font-size:13px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- HERO -->
+    <header class="hero">
+      <div>
+        <span class="badge">Método Montessori en Casa™ • 2–6 años</span>
+        <h1>Logra que tu hijo aprenda feliz, sin pantallas y sin estrés</h1>
+        <p class="lead">Guía paso a paso para padres: actividades por edad, planificación lista y recursos imprimibles para aprender jugando en casa.</p>
+
+        <div class="cta-row">
+          <!-- CTA HERO -->
+          <a class="btn" href="https://pay.hotmart.com/A102797427Q" id="cta-hero">🧩 Quiero comenzar el aprendizaje en casa</a>
+          <a class="btn ghost" href="#detalles">Ver entregables</a>
+        </div>
+
+        <div style="margin-top:12px;color:var(--muted);font-size:14px">Acceso inmediato • Descargas imprimibles • Garantía 7 días</div>
+      </div>
+
+      <!-- HERO IMAGE (replace the src with your uploaded file: assets/img-hero.jpg) -->
+      <div>
+        <img class="hero-img" src="assets/img-hero.jpg" alt="Niño haciendo actividad Montessori" />
+      </div>
+    </header>
+
+    <!-- STORY + BENEFITS -->
+    <section class="section">
+      <div class="card" style="display:grid;grid-template-columns:1fr 340px;gap:18px;align-items:center">
+        <div>
+          <h3 style="margin:0 0 10px;font-family:var(--ff-head)">De la frustración a la calma: aprende cómo aplicarlo en casa</h3>
+          <p class="muted">Si sientes que no tienes tiempo o que Montessori es complicado, este libro digital te dará un camino claro y rápido para empezar con 10–15 minutos diarios.</p>
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:20px;font-weight:800">$7 USD</div>
+          <div class="muted">Oferta de lanzamiento</div>
+        </div>
+      </div>
+
+      <div class="benefits" style="margin-top:14px">
+        <div class="benefit"><h5>Concentración real</h5><p class="muted">Actividades que aumentan la atención sostenida.</p></div>
+        <div class="benefit"><h5>Menos pantallas</h5><p class="muted">Alternativas divertidas que enganchan al niño.</p></div>
+        <div class="benefit"><h5>Más autonomía</h5><p class="muted">Rutinas y herramientas para que el niño explore con confianza.</p></div>
+      </div>
+    </section>
+
+    <!-- ENTREGABLES & BONOS -->
+    <section id="detalles" class="section">
+      <h4 style="font-family:var(--ff-head)">Qué incluye</h4>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="card"><h4>Libro Digital Montessori</h4><p class="muted">Actividades por edad (2–6 años) con objetivos claros y materiales fáciles.</p></div>
+        <div class="card"><h4>Guía práctica para padres</h4><p class="muted">Cómo acompañar sin intervenir y crear un ambiente Montessori en casa.</p></div>
+        <div class="card"><h4>Planificador semanal editable + imprimibles</h4><p class="muted">Plantillas listas para usar y seguir el progreso.</p></div>
+      </div>
+
+      <div style="margin-top:14px" class="grid-3">
+        <div class="card"><h4>Bono #1 — Guía de Emergencia</h4><p class="muted">7 soluciones rápidas para días difíciles y frases Montessori para reconectar.</p></div>
+        <div class="card"><h4>Bono #2 — Reto 7 Días</h4><p class="muted">Desafíos diarios de 5 minutos para crear hábitos y ver resultados inmediatos.</p></div>
+        <div class="card"><h4>Acceso inmediato</h4><p class="muted">Descarga e imprime al instante: utiliza las actividades desde el primer día.</p></div>
+      </div>
+    </section>
+
+    <!-- GALLERY (use your uploaded images: assets/img-1.jpg, assets/img-2.jpg, assets/img-3.jpg, assets/img-4.jpg) -->
+    <section class="section">
+      <h4 style="font-family:var(--ff-head)">Galería</h4>
+      <div class="gallery" style="margin-top:12px">
+        <img src="assets/img-1.jpg" alt="Niño apilando bloques" />
+        <img src="assets/img-2.jpg" alt="Materiales Montessori y manualidades" />
+        <img src="assets/img-3.jpg" alt="Niño concentrado en actividad" />
+        <img src="assets/img-4.jpg" alt="Madre y niña dibujando" />
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="section">
+      <h4 style="font-family:var(--ff-head)">Lo que dicen padres reales</h4>
+      <div class="testimonials" style="margin-top:12px">
+        <div class="test"><p>“Mi hija ahora pide hacer sus actividades todos los días. ¡Y sin pantallas!”</p><div class="who">Claudia — mamá de 4 años, México</div></div>
+        <div class="test"><p>“Me ayudó a organizarme y disfrutar del aprendizaje juntos.”</p><div class="who">David — papá de 5 años, España</div></div>
+        <div class="test"><p>“Pequeños cambios, gran diferencia. Lo recomiendo a quienes no saben por dónde empezar.”</p><div class="who">María — mamá, Argentina</div></div>
+      </div>
+    </section>
+
+    <!-- CTA MEDIO -->
+    <section class="section">
+      <div class="card" style="text-align:center">
+        <h3 style="margin:0 0 8px;font-family:var(--ff-head)">Comienza hoy — transforma el aprendizaje en casa</h3>
+        <p class="muted" style="margin:0 0 14px">Acceso inmediato + recursos imprimibles + garantía 7 días.</p>
+        <!-- CTA MID -->
+        <a class="btn" href="https://pay.hotmart.com/A102797427Q">🧩 Quiero comenzar el aprendizaje en casa</a>
+      </div>
+    </section>
+
+    <!-- GARANTÍA / QUIÉN NO ES PARA -->
+    <section class="section" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="card"><h4>Garantía 7 días</h4><p class="muted">Si no cumple tus expectativas, pide reembolso total dentro de los 7 días.</p></div>
+      <div class="card"><h4>Quién no es para</h4><p class="muted">No es para quienes esperan resultados sin dedicar al menos 10 minutos diarios. Este método funciona con práctica y acompañamiento.</p></div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <h4 style="font-family:var(--ff-head)">Preguntas frecuentes</h4>
+      <div class="faq" style="margin-top:12px">
+        <div class="item"><button onclick="toggleFAQ(this)">¿Necesito materiales Montessori caros?</button><div class="ans">No. Las actividades usan objetos comunes del hogar y recursos imprimibles incluidos.</div></div>
+        <div class="item"><button onclick="toggleFAQ(this)">¿Y si no tengo tiempo cada día?</button><div class="ans">Con 10–15 minutos diarios verás cambios reales. Además el planificador facilita la organización.</div></div>
+        <div class="item"><button onclick="toggleFAQ(this)">¿Sirve para hermanos de distintas edades?</button><div class="ans">Sí: las actividades están separadas por rangos de edad 2–6 años para adaptarlas según el niño.</div></div>
+        <div class="item"><button onclick="toggleFAQ(this)">¿Cuánto dura el acceso?</button><div class="ans">Acceso ilimitado y descargas para imprimir cuando quieras.</div></div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section">
+      <div class="card" style="text-align:center">
+        <h3 style="margin:0 0 8px;font-family:var(--ff-head)">Imagina a tu hijo creando, concentrado y feliz</h3>
+        <p class="muted" style="margin:0 0 14px">Comienza hoy y convierte la curiosidad en hábito con pequeñas acciones diarias.</p>
+        <!-- CTA FINAL -->
+        <a class="btn" href="https://pay.hotmart.com/A102797427Q">🧩 Quiero comenzar el aprendizaje en casa</a>
+      </div>
+    </section>
+
+    <footer>
+      © Método Montessori en Casa™ — Acceso digital. Garantía 7 días.
+    </footer>
+
+    <!-- STICKY MOBILE CTA -->
+    <div class="sticky-cta"><a class="btn" href="https://pay.hotmart.com/A102797427Q" style="width:100%;text-align:center;padding:14px 16px;border-radius:12px">🧩 Quiero comenzar el aprendizaje en casa</a></div>
+
+  </div>
+
+  <script>
+    // FAQ toggle
+    function toggleFAQ(btn){
+      var ans = btn.nextElementSibling;
+      if(ans.style.display==='block'){ans.style.display='none'}else{ans.style.display='block'}
+    }
+
+    // Lazy show sticky on scroll for mobile
+    function checkSticky(){
+      var st = document.querySelector('.sticky-cta');
+      if(window.innerWidth <= 700){st.style.display='flex'}else{st.style.display='none'}
+    }
+    window.addEventListener('resize',checkSticky);
+    window.addEventListener('load',checkSticky);
+
+    // Replace image placeholders note (developer):
+    // Please replace the following files in the assets/ folder with the images you provided:
+    // - assets/img-hero.jpg (hero image)
+    // - assets/img-1.jpg, assets/img-2.jpg, assets/img-3.jpg, assets/img-4.jpg (gallery images)
+
+  </script>
+</body>
+</html>
